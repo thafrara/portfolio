@@ -37,10 +37,13 @@ nav a {
     object-fit: cover;   /* cover without stretching */
     display: block;      /* remove default inline spacing */
 }
+
+
 @media (max-width: 768px) {
   .home-img img {
-    width: 100vw;        
-    height: 100vh;       
-    object-fit: cover;   
+    width: 100%;       
+    height: auto;     
+    max-height: 100vh;
+    object-fit: contain; 
   }
 }
