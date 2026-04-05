@@ -11,7 +11,7 @@ html, body {
     height: 100%;
     width: 100%;
     overflow-x: hidden;
-    background-color: #b7bed5;    
+    background-color: #A9B0B4;     
 
 }
 
@@ -19,7 +19,7 @@ html, body {
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #b7bed5;    
+    background-color: #A9B0B4;     
 }
 
 /* MENU */
@@ -43,7 +43,7 @@ nav a {
     background-size: contain; 
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #b7bed5;    
+    background-color: #A9B0B4;     
 }
 
 
