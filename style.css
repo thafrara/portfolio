@@ -53,7 +53,19 @@ nav a {
     text-align: center;
 }
 
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
 
+.home {
+    height: 100vh; /* ارتفاع كامل الشاشة */
+    background-image: url("your-image.jpg");
+    background-size: cover; /* مهم جدا */
+    background-position: center;
+    background-repeat: no-repeat;
+}
 @media (max-width: 768px) {
 
     nav {
