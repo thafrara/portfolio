@@ -32,6 +32,10 @@ nav a {
     height: 100vh;
     object-fit: cover;
     display: block;
+    
+    background-color: #eaeaea; 
+
+
 }
 
 /* GALLERY (عدة صور) */
@@ -51,15 +55,11 @@ nav a {
 .content {
     padding: 40px;
     text-align: center;
+    background-color: #eaeaea; 
+
 }
 
-.home {
-    height: 100vh;
-    background-image: url("your-image.jpg");
-    background-size: contain; 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #eaeaea; 
+
 
 }
 @media (max-width: 768px) {
