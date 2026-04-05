@@ -1,17 +1,28 @@
-/* RESET */
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* BODY */
-body {
-    font-family: Arial, sans-serif;
-    background: #f5f5f5;
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #eaeaea; 
+
 }
 
-/* NAVBAR */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* MENU */
 nav {
     display: flex;
     justify-content: flex-end;
@@ -26,54 +37,34 @@ nav a {
     font-weight: bold;
 }
 
-/* HOME IMAGE (صورة واحدة) */
-.home-img img {
-    width: 100%;
+
+.home-img {
+    width: 100%;         
+    max-width: 100%;
+}
+.home {
     height: 100vh;
-    object-fit: cover;
-    display: block;
-    
+    background-image: url("your-image.jpg");
+    background-size: contain; 
+    background-position: center;
+    background-repeat: no-repeat;
     background-color: #eaeaea; 
-
-
 }
 
-/* GALLERY (عدة صور) */
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    padding: 20px;
-}
-
-.gallery img {
-    width: 100%;
-    height: auto;
-}
-
-/* CONTENT (About / Contact) */
-.content {
-    padding: 40px;
-    text-align: center;
-    background-color: #eaeaea; 
-
+.home-img img {
+    width: 100%;          /* الصورة تمتد بعرض div */
+    height: auto;         /* يحافظ على النسبة الأصلية للصورة */
+    max-height: 100vh;    /* لا تتجاوز ارتفاع الشاشة */
+    display: block;       /* إزالة الفراغات تحت الصورة */
+    object-fit: cover;    /* لتغطية مساحة div بشكل جميل */
 }
 
 
-
-}
 @media (max-width: 768px) {
-
-    nav {
-        justify-content: center;
-    }
-
-    .gallery {
-        grid-template-columns: 1fr;
-    }
-
     .home-img img {
-        height: 100vh;
-        object-fit: cover;
+        width: 100%;      /* العرض كامل للشاشة الصغيرة */
+        height: auto;     /* ارتفاع تلقائي للحفاظ على النسبة */
+        object-fit: contain; /* تظهر الصورة كاملة بدون قص */
+        max-height: 100vh;  /* لا تتجاوز ارتفاع الشاشة */
     }
 }
