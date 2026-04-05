@@ -58,7 +58,14 @@ nav a {
 .home-img img {
     width: 100%;        
     height: auto;         
-    max-height: 100vh;    
+    max-height: 300vh;    
+    display: block;      
+    object-fit: cover;    
+}
+.contact-img img {
+    width: 100%;        
+    height: auto;         
+    max-height: 300vh;    
     display: block;      
     object-fit: cover;    
 }
