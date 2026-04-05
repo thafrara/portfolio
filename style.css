@@ -37,11 +37,6 @@ nav a {
     font-weight: bold;
 }
 
-
-.home-img {
-    width: 100%;         
-    max-width: 100%;
-}
 .home {
     height: 100vh;
     background-image: url("your-image.jpg");
@@ -50,6 +45,15 @@ nav a {
     background-repeat: no-repeat;
     background-color: #b7bed5;    
 }
+
+
+.home img {
+    width: 100%;
+    height: auto; 
+    display: block;
+}
+
+
 
 .home-img img {
     width: 100%;        
