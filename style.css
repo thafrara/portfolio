@@ -53,11 +53,13 @@ nav a {
     text-align: center;
 }
 
-.home img {
-    width: 100%;
+.home {
     height: 100vh;
-    object-fit: cover; 
-}
+    background-image: url("your-image.jpg");
+    background-size: contain; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #eaeaea; 
 
 }
 @media (max-width: 768px) {
